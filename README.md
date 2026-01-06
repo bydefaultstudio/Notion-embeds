@@ -1,4 +1,4 @@
-# [Your Project Name]
+# Notion Embeds
 
 This project uses a structured design system and layout architecture for building consistent, maintainable front-end experiences.
 
