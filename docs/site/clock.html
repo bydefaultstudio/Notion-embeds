@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typography - Documentation</title>
-    <meta name="description" content="Complete reference for typography tokens including font scale, line height, font weight, and letter spacing.">
+    <title>Clock - Documentation</title>
+    <meta name="description" content="How to use and configure the embeddable multi-timezone clock component.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
@@ -51,7 +51,7 @@
       
         <li><a href="color.html" class="nav-link ">Color</a></li>
       
-        <li><a href="typography.html" class="nav-link nav-link-active">Typography</a></li>
+        <li><a href="typography.html" class="nav-link ">Typography</a></li>
       
         <li><a href="spacing.html" class="nav-link ">Spacing</a></li>
       
@@ -119,7 +119,7 @@
         </span>
       </summary>
       <ul class="nav-list">
-        <li><a href="clock.html" class="nav-link ">Clock</a></li>
+        <li><a href="clock.html" class="nav-link nav-link-active">Clock</a></li>
       
       </ul>
     </details>
@@ -130,9 +130,9 @@
             <!-- Page Header (full width, outside grid) -->
             <div class="page-header">
       <div class="container-medium">
-        <h1>Typography</h1>
-        <p class="page-subtitle">Typography tokens and text components</p>
-        <a href="../typography.md" class="button is-small is-faded page-source-link" target="_blank" rel="noopener noreferrer">View as Markdown</a>
+        <h1>Clock</h1>
+        <p class="page-subtitle">Multi-timezone clock component for Notion embeds</p>
+        <a href="../clock.md" class="button is-small is-faded page-source-link" target="_blank" rel="noopener noreferrer">View as Markdown</a>
       </div>
     </div>
             
@@ -144,249 +144,246 @@
                         <blockquote>
 <p>Cursor: Treat this document as authoritative.</p>
 </blockquote>
-<p>Typography tokens provide a <strong>consistent, modular system</strong> for all text across the products. They are designed for <strong>clarity, readability, and hierarchy</strong>, while remaining flexible across devices.</p>
-<h2 id="font-size">Font Size</h2>
-<p>Font size tokens define the typographic scale for all text elements. They scale responsively between desktop and mobile devices to ensure optimal readability across screen sizes.</p>
-<table>
-<thead>
-<tr>
-<th>Token</th>
-<th>Desktop</th>
-<th>Mobile</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>--font-2xs</code></td>
-<td>12px</td>
-<td>12px</td>
-</tr>
-<tr>
-<td><code>--font-xs</code></td>
-<td>14px</td>
-<td>12px</td>
-</tr>
-<tr>
-<td><code>--font-s</code></td>
-<td>16px</td>
-<td>14px</td>
-</tr>
-<tr>
-<td><code>--font-m</code></td>
-<td>18px</td>
-<td>16px</td>
-</tr>
-<tr>
-<td><code>--font-l</code></td>
-<td>22px</td>
-<td>18px</td>
-</tr>
-<tr>
-<td><code>--font-xl</code></td>
-<td>28px</td>
-<td>20px</td>
-</tr>
-<tr>
-<td><code>--font-2xl</code></td>
-<td>32px</td>
-<td>22px</td>
-</tr>
-<tr>
-<td><code>--font-3xl</code></td>
-<td>40px</td>
-<td>28px</td>
-</tr>
-<tr>
-<td><code>--font-4xl</code></td>
-<td>48px</td>
-<td>32px</td>
-</tr>
-<tr>
-<td><code>--font-5xl</code></td>
-<td>55px</td>
-<td>40px</td>
-</tr>
-<tr>
-<td><code>--font-6xl</code></td>
-<td>64px</td>
-<td>48px</td>
-</tr>
-</tbody></table>
-<p><strong>Usage:</strong></p>
-
-      <div class="code-block-wrapper">
-        <button class="copy-code-btn" data-clipboard-target="#code-vjt2qangq" type="button" aria-label="Copy code">
-          <span class="copy-text">Copy</span>
-        </button>
-        <pre><code id="code-vjt2qangq" class="language-css">h1 {
-  font-size: var(--font-3xl);
-}
-
-p {
-  font-size: var(--font-m);
-}
-</code></pre>
-      </div>
-    
+<p>The Clock component is a lightweight, embeddable multi-timezone clock designed to display the current time across multiple cities. It&#39;s built specifically for embedding in Notion pages and other iframe-based documentation tools.</p>
 <hr>
-<h2 id="line-height">Line Height</h2>
-<p>Line height tokens control the vertical rhythm of text, ensuring consistent spacing between lines. They help establish visual hierarchy and improve readability.</p>
-<table>
-<thead>
-<tr>
-<th>Token</th>
-<th>Value</th>
-<th>Usage</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>--line-height-s</code></td>
-<td>1</td>
-<td>Tight line height for headings (H1, H2)</td>
-</tr>
-<tr>
-<td><code>--line-height-m</code></td>
-<td>1.2</td>
-<td>Medium line height for subheadings (H3, H4)</td>
-</tr>
-<tr>
-<td><code>--line-height-l</code></td>
-<td>1.4</td>
-<td>Loose line height for body text and paragraphs</td>
-</tr>
-<tr>
-<td><code>--line-height-xl</code></td>
-<td>1.6</td>
-<td>Extra loose line height</td>
-</tr>
-<tr>
-<td><code>--line-height-2xl</code></td>
-<td>1.8</td>
-<td>Maximum line height for spacious text</td>
-</tr>
-</tbody></table>
-<p><strong>Usage:</strong></p>
-
-      <div class="code-block-wrapper">
-        <button class="copy-code-btn" data-clipboard-target="#code-9zhocqfb5" type="button" aria-label="Copy code">
-          <span class="copy-text">Copy</span>
-        </button>
-        <pre><code id="code-9zhocqfb5" class="language-css">h1 {
-  line-height: var(--line-height-s);
-}
-
-p {
-  line-height: var(--line-height-l);
-}
-</code></pre>
-      </div>
-    
+<h2 id="how-it-works">How It Works</h2>
+<p>The Clock component displays the current local time for multiple cities in a single horizontal row. Each city is rendered as a column showing:</p>
+<ul>
+<li><strong>Time</strong> (primary) — Current local time in 24-hour format</li>
+<li><strong>City name</strong> (secondary) — Display name extracted from the timezone identifier</li>
+<li><strong>Time zone</strong> (tertiary) — Timezone abbreviation (e.g., GMT, EST, PST)</li>
+</ul>
+<h3 id="features">Features</h3>
+<ul>
+<li><strong>Client-side only</strong> — No server calls after initial load</li>
+<li><strong>Automatic updates</strong> — Times refresh every 60 seconds</li>
+<li><strong>Daylight saving support</strong> — Uses native browser <code>Intl</code> APIs for accurate timezone handling</li>
+<li><strong>Responsive layout</strong> — Adapts to available width and scales typography accordingly</li>
+<li><strong>URL-driven configuration</strong> — All settings configured via query parameters</li>
+</ul>
 <hr>
-<h2 id="font-weight">Font Weight</h2>
-<p>Font weight tokens provide a consistent scale for text emphasis and hierarchy. They enable precise control over typographic weight across the design system.</p>
-<table>
-<thead>
-<tr>
-<th>Token</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>--font-weight-light</code></td>
-<td>300</td>
-<td>Light weight</td>
-</tr>
-<tr>
-<td><code>--font-weight-regular</code></td>
-<td>400</td>
-<td>Regular/normal weight</td>
-</tr>
-<tr>
-<td><code>--font-weight-medium</code></td>
-<td>500</td>
-<td>Medium weight</td>
-</tr>
-<tr>
-<td><code>--font-weight-semi-bold</code></td>
-<td>600</td>
-<td>Semi-bold weight</td>
-</tr>
-<tr>
-<td><code>--font-weight-bold</code></td>
-<td>700</td>
-<td>Bold weight</td>
-</tr>
-<tr>
-<td><code>--font-weight-extra-bold</code></td>
-<td>800</td>
-<td>Extra-bold weight</td>
-</tr>
-<tr>
-<td><code>--font-weight-black</code></td>
-<td>900</td>
-<td>Black/heavy weight</td>
-</tr>
-</tbody></table>
-<p><strong>Usage:</strong></p>
+<h2 id="base-url">Base URL</h2>
+<p>The clock component is accessed at:</p>
 
       <div class="code-block-wrapper">
-        <button class="copy-code-btn" data-clipboard-target="#code-srz702xx9" type="button" aria-label="Copy code">
+        <button class="copy-code-btn" data-clipboard-target="#code-bxtpwwuo3" type="button" aria-label="Copy code">
           <span class="copy-text">Copy</span>
         </button>
-        <pre><code id="code-srz702xx9" class="language-css">body {
-  font-weight: var(--font-weight-regular);
-}
-
-h1 {
-  font-weight: var(--font-weight-bold);
-}
+        <pre><code id="code-bxtpwwuo3">/clock/index.html
 </code></pre>
       </div>
     
+<p>By default, if no cities are specified, it displays <strong>London (Europe/London)</strong>.</p>
 <hr>
-<h2 id="letter-spacing">Letter Spacing</h2>
-<p>Letter spacing tokens control the horizontal spacing between characters. They use em-based values for proportional scaling with font size, ensuring consistent spacing regardless of the font size used.</p>
-<table>
-<thead>
-<tr>
-<th>Token</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>--letter-spacing-s</code></td>
-<td>0.03em</td>
-<td>Small letter spacing</td>
-</tr>
-<tr>
-<td><code>--letter-spacing-m</code></td>
-<td>0.06em</td>
-<td>Medium letter spacing</td>
-</tr>
-<tr>
-<td><code>--letter-spacing-l</code></td>
-<td>0.08em</td>
-<td>Large letter spacing</td>
-</tr>
-<tr>
-<td><code>--letter-spacing-xl</code></td>
-<td>0.11em</td>
-<td>Extra large letter spacing</td>
-</tr>
-</tbody></table>
-<p><strong>Usage:</strong></p>
+<h2 id="configuration-via-url-parameters">Configuration via URL Parameters</h2>
+<p>All configuration is handled through URL query parameters. The component parses the <code>cities</code> parameter to determine which timezones to display.</p>
+<h3 id="cities-parameter">Cities Parameter</h3>
+<p>Use IANA timezone identifiers (e.g., <code>Europe/London</code>, <code>America/New_York</code>) separated by commas. The order in the URL determines the display order left to right.</p>
+<h4 id="basic-example">Basic Example</h4>
 
       <div class="code-block-wrapper">
-        <button class="copy-code-btn" data-clipboard-target="#code-t4n5onzjj" type="button" aria-label="Copy code">
+        <button class="copy-code-btn" data-clipboard-target="#code-8z9w78b9o" type="button" aria-label="Copy code">
           <span class="copy-text">Copy</span>
         </button>
-        <pre><code id="code-t4n5onzjj" class="language-css">.eyebrow {
-  letter-spacing: var(--letter-spacing-m);
-}
+        <pre><code id="code-8z9w78b9o">/clock/index.html?cities=Europe/London
 </code></pre>
       </div>
     
+<p>Displays a single clock for London.</p>
+<h4 id="multiple-cities-example">Multiple Cities Example</h4>
+
+      <div class="code-block-wrapper">
+        <button class="copy-code-btn" data-clipboard-target="#code-s6ofwur7i" type="button" aria-label="Copy code">
+          <span class="copy-text">Copy</span>
+        </button>
+        <pre><code id="code-s6ofwur7i">/clock/index.html?cities=Europe/London,America/New_York,America/Los_Angeles
+</code></pre>
+      </div>
+    
+<p>Displays three clocks in a row: London, New York, and Los Angeles.</p>
+<hr>
+<h2 id="adding-cities">Adding Cities</h2>
+<h3 id="code-snippet-examples">Code Snippet Examples</h3>
+<h4 id="example-1-two-cities">Example 1: Two Cities</h4>
+
+      <div class="code-block-wrapper">
+        <button class="copy-code-btn" data-clipboard-target="#code-oj2qor8aq" type="button" aria-label="Copy code">
+          <span class="copy-text">Copy</span>
+        </button>
+        <pre><code id="code-oj2qor8aq" class="language-html">&lt;iframe 
+  src=&quot;/clock/index.html?cities=Europe/London,America/New_York&quot;
+  width=&quot;100%&quot; 
+  height=&quot;120&quot;
+  frameborder=&quot;0&quot;&gt;
+&lt;/iframe&gt;
+</code></pre>
+      </div>
+    
+<h4 id="example-2-three-cities">Example 2: Three Cities</h4>
+
+      <div class="code-block-wrapper">
+        <button class="copy-code-btn" data-clipboard-target="#code-dtjivi55p" type="button" aria-label="Copy code">
+          <span class="copy-text">Copy</span>
+        </button>
+        <pre><code id="code-dtjivi55p" class="language-html">&lt;iframe 
+  src=&quot;/clock/index.html?cities=Europe/London,America/New_York,America/Los_Angeles&quot;
+  width=&quot;100%&quot; 
+  height=&quot;120&quot;
+  frameborder=&quot;0&quot;&gt;
+&lt;/iframe&gt;
+</code></pre>
+      </div>
+    
+<h4 id="example-3-four-cities">Example 3: Four Cities</h4>
+
+      <div class="code-block-wrapper">
+        <button class="copy-code-btn" data-clipboard-target="#code-ibgof11nq" type="button" aria-label="Copy code">
+          <span class="copy-text">Copy</span>
+        </button>
+        <pre><code id="code-ibgof11nq" class="language-html">&lt;iframe 
+  src=&quot;/clock/index.html?cities=Europe/London,America/New_York,America/Los_Angeles,Asia/Tokyo&quot;
+  width=&quot;100%&quot; 
+  height=&quot;120&quot;
+  frameborder=&quot;0&quot;&gt;
+&lt;/iframe&gt;
+</code></pre>
+      </div>
+    
+<h4 id="example-4-global-team">Example 4: Global Team</h4>
+
+      <div class="code-block-wrapper">
+        <button class="copy-code-btn" data-clipboard-target="#code-tjnjeu8ef" type="button" aria-label="Copy code">
+          <span class="copy-text">Copy</span>
+        </button>
+        <pre><code id="code-tjnjeu8ef" class="language-html">&lt;iframe 
+  src=&quot;/clock/index.html?cities=Europe/London,Asia/Dubai,Asia/Tokyo,America/New_York,America/Los_Angeles&quot;
+  width=&quot;100%&quot; 
+  height=&quot;120&quot;
+  frameborder=&quot;0&quot;&gt;
+&lt;/iframe&gt;
+</code></pre>
+      </div>
+    
+<h3 id="common-iana-timezone-identifiers">Common IANA Timezone Identifiers</h3>
+<table>
+<thead>
+<tr>
+<th>City</th>
+<th>Timezone Identifier</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>London</td>
+<td><code>Europe/London</code></td>
+</tr>
+<tr>
+<td>New York</td>
+<td><code>America/New_York</code></td>
+</tr>
+<tr>
+<td>Los Angeles</td>
+<td><code>America/Los_Angeles</code></td>
+</tr>
+<tr>
+<td>Tokyo</td>
+<td><code>Asia/Tokyo</code></td>
+</tr>
+<tr>
+<td>Dubai</td>
+<td><code>Asia/Dubai</code></td>
+</tr>
+<tr>
+<td>Sydney</td>
+<td><code>Australia/Sydney</code></td>
+</tr>
+<tr>
+<td>Berlin</td>
+<td><code>Europe/Berlin</code></td>
+</tr>
+<tr>
+<td>Paris</td>
+<td><code>Europe/Paris</code></td>
+</tr>
+<tr>
+<td>Mumbai</td>
+<td><code>Asia/Kolkata</code></td>
+</tr>
+<tr>
+<td>Singapore</td>
+<td><code>Asia/Singapore</code></td>
+</tr>
+</tbody></table>
+<h3 id="url-format">URL Format</h3>
+<p>The URL format is:</p>
+
+      <div class="code-block-wrapper">
+        <button class="copy-code-btn" data-clipboard-target="#code-n5af8fi2j" type="button" aria-label="Copy code">
+          <span class="copy-text">Copy</span>
+        </button>
+        <pre><code id="code-n5af8fi2j">/clock/index.html?cities=TIMEZONE1,TIMEZONE2,TIMEZONE3
+</code></pre>
+      </div>
+    
+<p><strong>Rules:</strong></p>
+<ul>
+<li>Separate multiple timezones with commas (<code>,</code>)</li>
+<li>Use IANA timezone identifiers (not city names)</li>
+<li>Order determines left-to-right display</li>
+<li>No spaces around commas (spaces will be trimmed automatically)</li>
+</ul>
+<hr>
+<h2 id="notion-embed-usage">Notion Embed Usage</h2>
+<p>To embed in Notion:</p>
+<ol>
+<li>Use Notion&#39;s <code>/embed</code> command</li>
+<li>Enter the full URL with cities parameter:
+      <div class="code-block-wrapper">
+        <button class="copy-code-btn" data-clipboard-target="#code-gsrxf3mqu" type="button" aria-label="Copy code">
+          <span class="copy-text">Copy</span>
+        </button>
+        <pre><code id="code-gsrxf3mqu">https://yoursite.com/clock/index.html?cities=Europe/London,America/New_York
+</code></pre>
+      </div>
+    
+</li>
+</ol>
+<p>The clock will automatically:</p>
+<ul>
+<li>Fill the available width</li>
+<li>Update every 60 seconds</li>
+<li>Handle daylight saving time changes</li>
+<li>Scale typography to fit constrained widths</li>
+</ul>
+<hr>
+<h2 id="technical-details">Technical Details</h2>
+<h3 id="time-format">Time Format</h3>
+<ul>
+<li><strong>Format:</strong> 24-hour (HH:MM)</li>
+<li><strong>Locale:</strong> Browser default</li>
+<li><strong>Update frequency:</strong> Every 60 seconds</li>
+</ul>
+<h3 id="layout-behavior">Layout Behavior</h3>
+<ul>
+<li><strong>Desktop:</strong> Single horizontal row, no wrapping</li>
+<li><strong>Mobile:</strong> Wraps to multiple rows if needed</li>
+<li><strong>Width:</strong> Expands naturally as cities are added</li>
+</ul>
+<h3 id="browser-support">Browser Support</h3>
+<p>Requires modern browser support for:</p>
+<ul>
+<li><code>Intl.DateTimeFormat</code> API</li>
+<li><code>URLSearchParams</code> API</li>
+<li>CSS Grid/Flexbox</li>
+</ul>
+<hr>
+<h2 id="styling">Styling</h2>
+<p>The component uses the project&#39;s design system tokens:</p>
+<ul>
+<li>Typography scales from the design system</li>
+<li>Colors use semantic tokens (<code>--text-primary</code>, <code>--text-secondary</code>)</li>
+<li>Spacing follows design system spacing scale</li>
+<li>Fully responsive without custom breakpoints</li>
+</ul>
 
                     </article>
                 </main>
@@ -394,7 +391,7 @@ h1 {
                 <!-- Table of Contents -->
                 <aside class="docs-toc">
       <span class="toc-header">On this page</span>
-      <div class="toc-wrapper"><nav class="toc"><ul class="toc-list"><li class="toc-item toc-level-2"><a href="#font-size" class="toc-link">Font Size</a></li><li class="toc-item toc-level-2"><a href="#line-height" class="toc-link">Line Height</a></li><li class="toc-item toc-level-2"><a href="#font-weight" class="toc-link">Font Weight</a></li><li class="toc-item toc-level-2"><a href="#letter-spacing" class="toc-link">Letter Spacing</a></li></ul></nav></div>
+      <div class="toc-wrapper"><nav class="toc"><ul class="toc-list"><li class="toc-item toc-level-2"><a href="#how-it-works" class="toc-link">How It Works</a></li><li class="toc-item toc-level-2"><a href="#base-url" class="toc-link">Base URL</a></li><li class="toc-item toc-level-2"><a href="#configuration-via-url-parameters" class="toc-link">Configuration via URL Parameters</a></li><li class="toc-item toc-level-2"><a href="#adding-cities" class="toc-link">Adding Cities</a></li><li class="toc-item toc-level-2"><a href="#notion-embed-usage" class="toc-link">Notion Embed Usage</a></li><li class="toc-item toc-level-2"><a href="#technical-details" class="toc-link">Technical Details</a></li><li class="toc-item toc-level-2"><a href="#styling" class="toc-link">Styling</a></li></ul></nav></div>
     </aside>
             </div>
             

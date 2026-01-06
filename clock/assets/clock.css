@@ -1,0 +1,65 @@
+/* ------ CLOCK COMPONENT ------ */
+
+/* -- Container -- */
+.clock-container {
+  width: 100%;
+  padding: var(--space-l);
+  text-align: center;
+}
+
+/* -- Row layout -- */
+.clock-row {
+  width: 100%;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+/* -- Column layout -- */
+.clock-column {
+  flex: 1 1 0;
+  min-width: 0;
+  /* align-items: flex-start; */
+}
+
+/* -- Time (primary) -- */
+.clock-time {
+  color: var(--text-primary);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-s);
+  white-space: nowrap;
+}
+
+/* -- City (secondary) -- */
+.clock-city {
+  color: var(--text-primary);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-m);
+  white-space: nowrap;
+}
+
+/* -- Timezone (tertiary) -- */
+.clock-timezone {
+  color: var(--text-secondary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-m);
+  white-space: nowrap;
+}
+
+/* ------ RESPONSIVE ------ */
+
+@media (max-width: 768px) {
+  .clock-container {
+    padding: var(--space-m);
+
+  }
+  
+  /* .clock-row {
+    flex-wrap: wrap;
+  }
+  
+  .clock-column {
+    flex: 1 1 calc(50% - var(--space-l));
+    min-width: calc(50% - var(--space-l));
+  } */
+}
+
