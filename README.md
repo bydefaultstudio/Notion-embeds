@@ -1,33 +1,73 @@
 # Notion Embeds
 
-This project uses a structured design system and layout architecture for building consistent, maintainable front-end experiences.
+A collection of lightweight, responsive embeds that add missing functionality to Notion pages. Each component is designed to work seamlessly inside Notion's iframe embed system and can be easily configured via URL parameters.
 
-## Overview
+## What is this?
 
-This project includes:
+Notion is flexible but limited. This project extends Notion with useful, non-native functionality through embeddable components that feel native when designed well. Whether you need to see team timezones at a glance, display live utilities, or add simple interactive tools, these embeds help reduce friction in your Notion workflows.
 
-- A complete **design system** with tokens, utility classes, and components
-- Clear **layout and spacing rules** for consistent page structure
-- Documented **best practices** for CSS, JavaScript, and HTML
-- A **style guide** for visualizing available patterns
+## Features
+
+- **Lightweight** — Minimal dependencies, fast load times
+- **Responsive** — Works across desktop, tablet, and mobile
+- **Easy to use** — Configure via URL parameters, no code required
+- **Standalone** — Each embed works independently
+- **Accessible** — Built with semantic HTML and clear contrast
+
+## Available Components
+
+### Clock — Multi-Timezone Clock
+
+Display the current time across multiple cities in a single horizontal row. Perfect for distributed teams working across different time zones.
+
+**Usage in Notion:**
+
+1. Use Notion's `/embed` command
+2. Enter the URL with your desired cities:
+
+```
+https://yoursite.com/clock/index.html?cities=Europe/London,America/New_York,America/Los_Angeles
+```
+
+**Example URLs:**
+
+- Single city: `/clock/index.html?cities=Europe/London`
+- Multiple cities: `/clock/index.html?cities=Europe/London,America/New_York,America/Los_Angeles`
+- Global team: `/clock/index.html?cities=Europe/London,Asia/Tokyo,America/New_York`
+
+**Features:**
+- Displays multiple timezones in a single row
+- Updates automatically every 60 seconds
+- Uses IANA timezone identifiers
+- Fully responsive
+- No server calls after initial load
+
+For complete documentation, see the [Clock Component guide](docs/site/clock.html).
 
 ## Getting Started
 
-1. Review `PROJECT_BRIEF.md` for project goals and requirements
-2. Follow the [Setup guide](docs/site/setup.html) to customize brand colors, fonts, and logo
-3. Explore the [Documentation](docs/site/index.html) for design system details
-4. Check the [Style Guide](styleguide/index.html) to see available patterns
-5. Start building pages inside `/src`
+1. Browse available components above
+2. Copy the embed URL with your desired configuration
+3. Paste into Notion's embed block
+4. Customize the URL parameters as needed
 
 ## Documentation
 
 Complete documentation is available in the [Documentation site](docs/site/index.html), including:
 
-- **Design System** — Color, typography, spacing, borders, components
-- **Code Structure** — CSS and JavaScript organization patterns  
-- **HTML Layout** — Page structure and layout primitives
-- **Content** — Markdown style and SEO best practices
-- **Project** — Setup, folder structure, and project overview
+- **Component guides** — Detailed usage for each embed
+- **Design system** — Design tokens and patterns used
+- **Development** — Code structure and contribution guidelines
+- **Project overview** — Goals, architecture, and roadmap
+
+## For Developers
+
+This project uses a structured design system and layout architecture. If you're contributing or extending components:
+
+- Review `PROJECT_BRIEF.md` for project goals and requirements
+- Follow the [Design System documentation](docs/site/index.html)
+- Each component lives in its own folder with assets
+- Components use shared design tokens and patterns
 
 ---
 
