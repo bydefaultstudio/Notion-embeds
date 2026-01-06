@@ -23,6 +23,7 @@
 
 /* -- Time (primary) -- */
 .clock-time {
+  font-size: var(--font-3xl);
   color: var(--text-primary);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-s);
@@ -31,6 +32,7 @@
 
 /* -- City (secondary) -- */
 .clock-city {
+  font-size: var(--font-xs);
   color: var(--text-primary);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-m);
@@ -39,9 +41,11 @@
 
 /* -- Timezone (tertiary) -- */
 .clock-timezone {
+  font-size: var(--font-2xs);
   color: var(--text-secondary);
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-medium);
   line-height: var(--line-height-m);
+  letter-spacing: var(--letter-spacing-l);
   white-space: nowrap;
 }
 
@@ -52,14 +56,6 @@
     padding: var(--space-m);
 
   }
-  
-  /* .clock-row {
-    flex-wrap: wrap;
-  }
-  
-  .clock-column {
-    flex: 1 1 calc(50% - var(--space-l));
-    min-width: calc(50% - var(--space-l));
-  } */
+
 }
 

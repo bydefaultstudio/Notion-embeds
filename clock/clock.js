@@ -64,16 +64,16 @@ const createClockColumn = (timezone, cityName, time, timezoneAbbr) => {
   column.setAttribute('data-timezone', timezone);
   
   const timeElement = document.createElement('time');
-  timeElement.className = 'clock-time font-3xl';
+  timeElement.className = 'clock-time';
   timeElement.setAttribute('datetime', new Date().toISOString());
   timeElement.textContent = time;
   
   const cityElement = document.createElement('div');
-  cityElement.className = 'clock-city font-m';
+  cityElement.className = 'clock-city';
   cityElement.textContent = cityName;
   
   const tzElement = document.createElement('div');
-  tzElement.className = 'clock-timezone font-xs';
+  tzElement.className = 'clock-timezone';
   tzElement.textContent = timezoneAbbr;
   
   column.appendChild(timeElement);
