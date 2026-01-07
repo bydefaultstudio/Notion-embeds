@@ -26,14 +26,13 @@ Display the current time across multiple cities in a single horizontal row. Perf
 2. Enter the URL with your desired cities:
 
 ```
-https://yoursite.com/clock/index.html?cities=Europe/London,America/New_York,America/Los_Angeles
+https://bydefaultstudio.github.io/Notion-embeds/clock/index.html?cities=Europe/London,America/New_York,America/Los_Angeles
 ```
 
 **Example URLs:**
 
-- Single city: `/clock/index.html?cities=Europe/London`
-- Multiple cities: `/clock/index.html?cities=Europe/London,America/New_York,America/Los_Angeles`
-- Global team: `/clock/index.html?cities=Europe/London,Asia/Tokyo,America/New_York`
+- Single city: `clock/index.html?cities=Europe/London`
+- Multiple cities: `clock/index.html?cities=Europe/London,America/New_York,America/Los_Angeles`
 
 **Features:**
 - Displays multiple timezones in a single row

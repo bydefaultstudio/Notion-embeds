@@ -35,7 +35,7 @@ The Clock component displays the current local time for multiple cities in a sin
 The clock component is accessed at:
 
 ```
-/clock/index.html
+https://bydefaultstudio.github.io/Notion-embeds/clock/index.html
 ```
 
 By default, if no cities are specified, it displays **London (Europe/London)**.
@@ -53,7 +53,7 @@ Use IANA timezone identifiers (e.g., `Europe/London`, `America/New_York`) separa
 #### Basic Example
 
 ```
-/clock/index.html?cities=Europe/London
+https://bydefaultstudio.github.io/Notion-embeds/clock/index.html?cities=Europe/London
 ```
 
 Displays a single clock for London.
@@ -61,7 +61,7 @@ Displays a single clock for London.
 #### Multiple Cities Example
 
 ```
-/clock/index.html?cities=Europe/London,America/New_York,America/Los_Angeles
+https://bydefaultstudio.github.io/Notion-embeds/clock/index.html?cities=Europe/London,America/New_York,America/Los_Angeles
 ```
 
 Displays three clocks in a row: London, New York, and Los Angeles.
@@ -76,7 +76,7 @@ Displays three clocks in a row: London, New York, and Los Angeles.
 
 ```html
 <iframe 
-  src="/clock/index.html?cities=Europe/London,America/New_York"
+  src="https://bydefaultstudio.github.io/Notion-embeds/clock/index.html?cities=Europe/London,America/New_York"
   width="100%" 
   height="120"
   frameborder="0">
@@ -87,7 +87,7 @@ Displays three clocks in a row: London, New York, and Los Angeles.
 
 ```html
 <iframe 
-  src="/clock/index.html?cities=Europe/London,America/New_York,America/Los_Angeles"
+  src="https://bydefaultstudio.github.io/Notion-embeds/clock/index.html?cities=Europe/London,America/New_York,America/Los_Angeles"
   width="100%" 
   height="120"
   frameborder="0">
@@ -98,7 +98,7 @@ Displays three clocks in a row: London, New York, and Los Angeles.
 
 ```html
 <iframe 
-  src="/clock/index.html?cities=Europe/London,America/New_York,America/Los_Angeles,Asia/Tokyo"
+  src="https://bydefaultstudio.github.io/Notion-embeds/clock/index.html?cities=Europe/London,America/New_York,America/Los_Angeles,Asia/Tokyo"
   width="100%" 
   height="120"
   frameborder="0">
@@ -109,7 +109,7 @@ Displays three clocks in a row: London, New York, and Los Angeles.
 
 ```html
 <iframe 
-  src="/clock/index.html?cities=Europe/London,Asia/Dubai,Asia/Tokyo,America/New_York,America/Los_Angeles"
+  src="https://bydefaultstudio.github.io/Notion-embeds/clock/index.html?cities=Europe/London,Asia/Dubai,Asia/Tokyo,America/New_York,America/Los_Angeles"
   width="100%" 
   height="120"
   frameborder="0">
@@ -136,7 +136,7 @@ Displays three clocks in a row: London, New York, and Los Angeles.
 The URL format is:
 
 ```
-/clock/index.html?cities=TIMEZONE1,TIMEZONE2,TIMEZONE3
+https://bydefaultstudio.github.io/Notion-embeds/clock/index.html?cities=TIMEZONE1,TIMEZONE2,TIMEZONE3
 ```
 
 **Rules:**
@@ -154,7 +154,7 @@ To embed in Notion:
 1. Use Notion's `/embed` command
 2. Enter the full URL with cities parameter:
    ```
-   https://yoursite.com/clock/index.html?cities=Europe/London,America/New_York
+   https://bydefaultstudio.github.io/Notion-embeds/clock/index.html?cities=Europe/London,America/New_York
    ```
 
 The clock will automatically:

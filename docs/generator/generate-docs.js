@@ -292,11 +292,12 @@ function generatePage(file, template, navigation) {
   // Generate page header separately
   let pageHeader = '';
   if (frontmatter.title) {
+    const githubMarkdownUrl = `https://github.com/bydefaultstudio/Notion-embeds/blob/main/docs/${file.markdownPath}`;
     pageHeader = `<div class="page-header">
       <div class="container-medium">
         <h1>${frontmatter.title}</h1>
         ${frontmatter.subtitle ? `<p class="page-subtitle">${frontmatter.subtitle}</p>` : ''}
-        <a href="../${file.markdownPath}" class="button is-small is-faded page-source-link" target="_blank" rel="noopener noreferrer">View as Markdown</a>
+        <a href="${githubMarkdownUrl}" class="button is-small is-faded page-source-link" target="_blank" rel="noopener noreferrer">View as Markdown</a>
       </div>
     </div>`;
   }
